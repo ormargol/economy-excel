@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#define DATA_DIR "C:\\Users\\omargaliot\\Documents\\private_docs\\כלכלה 2017\\updated_data"
+
 int main(int argc, char** argv) {
 	int year = 2016;
 	int month, type, line, line_addon;
@@ -17,7 +19,7 @@ int main(int argc, char** argv) {
 				line_addon = 0;
 			}
 			for (line = 4 + line_addon; line < 204 + line_addon; line++) {
-				printf("=iferror(if('C:\\Users\\omargaliot\\Documents\\private_docs\\כלכלה 2017\\updated_data\\%s\\", type_names[type]);
+				printf("=iferror(if('" DATA_DIR "\\%s\\", type_names[type]);
 				printf("[%d_%s%d_%s.xls]", year, month < 10? "0":"", month, type_names[type]);
 				if (type == 0) {
 					printf("%d_%s%d_%s'!", year, month < 10? "0":"", month, type_names[type]);
@@ -25,7 +27,7 @@ int main(int argc, char** argv) {
 					printf("Transactions'!");
 				}
 				printf("%c%d=0,\"\",", type == 0? 'E':'B', line);
-				printf("'C:\\Users\\omargaliot\\Documents\\private_docs\\כלכלה 2017\\updated_data\\%s\\", type_names[type]);
+				printf("'" DATA_DIR "\\%s\\", type_names[type]);
 				printf("[%d_%s%d_%s.xls]", year, month < 10? "0":"", month, type_names[type]);
 				if (type == 0) {
 					printf("%d_%s%d_%s'!", year, month < 10? "0":"", month, type_names[type]);
