@@ -14,9 +14,9 @@ int main(int argc, char** argv) {
 	for (month = 1; month <= 12; month++) {
 		for (type = 0; type < 5; type++) {
 			if (type == 0) {
-				line_addon = 3;
-			} else {
 				line_addon = 0;
+			} else {
+				line_addon = 3;
 			}
 			for (line = 4 + line_addon; line < 204 + line_addon; line++) {
 				printf("=iferror(if('" DATA_DIR "\\%s\\", type_names[type]);
