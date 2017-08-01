@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define DATA_DIR "C:\\Users\\omargaliot\\Documents\\private_docs\\כלכלה 2017\\updated_data"
+#define DATA_DIR "C:\\Users\\DELL-PC\\Desktop\\Dropbox\\כלכלה 2017\\updated_data"
 
 int main(int argc, char** argv) {
 	int year = 2016;
